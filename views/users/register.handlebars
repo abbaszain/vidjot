@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="card card-body p-4">
+        <h1 class="text-center">Welcome</h1>
+        <h3 class="text-center">Create your account</h3>
+        <form action="/users/register" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" value="{{reg.name}}" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="mail">Email Id</label>
+                <input type="email" name="mail" value="{{reg.mail}}" id="mail" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="pass">Password</label>
+                <input type="password" value="{{reg.password}}"name="password" id="pass" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="passconfirm">Confirm Password</label>
+                <input type="password" value="{{reg.password2}}" name="password2" id="passconfirm" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </form>
+    </div>
+</div>
